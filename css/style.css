@@ -136,6 +136,10 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+h5 {
+  font-size: 1em;
+  padding-left: 20px;
+}
 
 /**
  * Address styling not present in IE 8/9.
@@ -432,10 +436,13 @@ body {
 }
 
 div {
-  border: 1px solid Chocolate;
+  border: 1px solid transparent; 
 }
 .top-navigation {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 .top-navigation .links {
 float: right;
@@ -457,6 +464,9 @@ margin-top: 25px;
 .top-navigation .links li:hover {
   cursor: pointer;
   color: #333333;
+}
+.top-navigation .logo {
+  height: 4.375rem;
 }
 .top-navigation > .content {
   width: 970px;
@@ -505,8 +515,52 @@ margin-top: 25px;
  }
 .cases {
   text-align: center;
+  background-color: #fff;
 }
 .cases h2 {
-  margin-top: 150px;
+  margin: 100px 0 70px 0;
 }
-
+.cases .devices {
+  margin: auto;
+}
+.cases .devices > li {
+  width: 33.333333333%;
+  display: inline-block;
+  width: 235px;
+  height: 250px;
+}
+.social {
+  background-color: #fff;
+  overflow: auto;
+  text-align: center;
+  padding-bottom: 9.375rem;
+}
+.social .icons > li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+}
+.social .twitter {
+  color: #55acee;
+}
+.social .facebook {
+  color: #4c66a4;
+}
+.social .instagram {
+  color: #3f729b;
+}
+.copy {
+  color: #838994;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-left: 40px;
+}
+.social hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
